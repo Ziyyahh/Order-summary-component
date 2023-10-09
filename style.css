@@ -1,0 +1,158 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    font-family: 'Red Hat Display', sans-serif;;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background: url(./images/pattern-background-desktop.svg) no-repeat; 
+    background-color: var(--pale-blue);
+}
+
+.image{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+ul{
+    list-style-type: none;
+}
+.container{
+     max-width: 450px; 
+    margin: 1rem;
+}
+
+.wrapper{
+    background-color: white;
+    margin-top: -4px;
+    padding: 2rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 1rem 1rem;
+}
+
+
+.plan{
+    display: flex;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    padding: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+}
+.music img{
+    margin-right: 1rem;
+}
+h1, .text{
+    text-align: center;
+}
+
+h1{
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    color: var(--desaturated-blue);
+    margin-bottom: 1rem;
+}
+
+ul{
+    line-height: 1.5rem;
+}
+
+.annual-plan{
+    font-weight: 700;
+}
+
+.price{
+    color: var(--desaturated-blue);
+}
+
+a{
+    font-weight: 700;
+}
+
+.btn{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-purple{
+margin-bottom: 1rem;
+background-color: var(--bright-blue);
+color: white;
+font-weight: 700;
+transition: .5s;
+}
+
+.btn-purple:hover{
+    background-color: hsl(244, 31%, 53%);
+    cursor: pointer;
+}
+
+.btn-white{
+    background-color: white;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+.btn-white:hover{
+    cursor: pointer;
+    color: var(--dark-blue);
+}
+
+@media(max-width:450px){
+    main{
+        background: url(./images/pattern-background-mobile.svg) no-repeat;
+    }
+    .wrapper{
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+    }
+
+    .text{
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .plan{
+        font-size: 0.85rem;
+    }
+
+}
+
+.attribution { font-size: 13px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
